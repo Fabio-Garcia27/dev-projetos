@@ -20,3 +20,4 @@ export function IconClose(props: React.SVGProps<SVGSVGElement>) {
 }
 
 export default IconClose;
+

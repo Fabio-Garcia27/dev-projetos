@@ -10,11 +10,16 @@ const Page = () => {
     setSidebarOpened(false);
   }
 
+  const handleClearConversations = () => {
+
+  }
+
   return (
     <main className="flex min-h-screen bg-gray-800">
       <Sidebar
         open={sidebarOpened}
         onClose={closeSidebar}
+        onClear={handleClearConversations}
       >
       </Sidebar>
       <section className="flex flex-col w-full">
