@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Esconde o Dev Indicator do Next.js */
+[data-nextjs-dev-indicator],
+[data-nextjs-toast] {
+  display: none !important;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

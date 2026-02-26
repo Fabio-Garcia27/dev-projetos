@@ -1,21 +1,21 @@
 import * as React from "react";
 
-export function IconAdd(props: React.SVGProps<SVGSVGElement>) {
+export function IconMenu(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      viewBox="0 0 512 512"
+      viewBox="0 0 24 24"
       width="1em"
       height="1em"
       fill="none"
       stroke="currentColor"
-      strokeWidth={32}
+      strokeWidth={2}
       strokeLinecap="round"
       strokeLinejoin="round"
       {...props}
     >
-      <path d="M256 112v288M400 256H112" />
+      <path d="M3 6h18M3 12h18M3 18h18" />
     </svg>
   );
 }
 
-export default IconAdd;
+export default IconMenu;

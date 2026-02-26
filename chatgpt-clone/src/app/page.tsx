@@ -3,9 +3,12 @@
 import { useState } from "react"
 import { Sidebar } from "@/components/Sidebar"
 import { Header } from "@/components/Header";
+import { ChatArea } from "@/components/ChatArea";
+import { Chat } from "@/types/Chat";
 
 const Page = () => {
   const [sidebarOpened, setSidebarOpened] = useState(false);
+  const [chatActive, setChatActive] = useState<Chat>();
 
   const openSidebar = () => setSidebarOpened(true);
   const closeSidebar = () => setSidebarOpened(false);
@@ -35,6 +38,7 @@ const Page = () => {
           title={`Bla bla bla`}
           newChatClick={handleNewChat}
         />
+        <ChatArea chat={chatActive} />
       </section>
     </main>
   )
